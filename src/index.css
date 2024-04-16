@@ -1,0 +1,92 @@
+body {
+  background-color: #121212; /* Darker, almost black background */
+  background: linear-gradient(to bottom, #121212 0%, #0a0a0a 100%); /* Subtle gradient */
+  color: #f0f0f0; /* Light text color */
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif; 
+}
+
+.chat-container {
+  width: 400px; 
+  height: 500px; 
+  background-color: #181a1b; 
+  border: none; /* Remove border */
+  margin: 20px auto; 
+  display: flex;
+  flex-direction: column; 
+  padding: 10px;
+}
+
+.chat-history {
+  flex: 1;
+  overflow-y: auto; 
+  list-style: none;
+  padding: 15px; 
+}
+
+.message { 
+  padding: 10px 15px; 
+  border-radius: 0; /* Sharp corners */
+  margin-bottom: 10px; 
+}
+
+.user-message { 
+  background-color: #0b5ed7; /* Blue for user messages */
+  text-align: right;
+}
+
+.suggestion-message { 
+  background-color: #202225; 
+}
+
+.input-area {
+  display: flex; 
+  align-items: center; 
+  background-color: #181a1b; /* Match chat container background */
+}
+
+.input-area input {
+  flex: 1; 
+  padding: 8px;
+  margin-right: 5px;
+  border: 1px solid #282c34; 
+  background-color: #101213;
+  color: white;
+  border-radius: 5px; 
+}
+
+.input-area button {
+  padding: 8px 12px;
+  background-color: #0b5ed7; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; 
+}
+
+.status-bar {
+  background-color: #304ffe; /* Blue background */
+  padding: 8px;
+  color: white;
+  text-align: center;
+}
+
+.status-active {
+  font-weight: bold;
+}
+
+.hammer-animation {
+  height: 20px;
+  animation: hammer 1s infinite alternate;
+}
+
+@keyframes hammer {
+  from { transform: translateY(0); }
+  to { transform: translateY(-5px); }
+}
+
+.loader-container {
+  margin-left: 10px; 
+  align-items: center;
+} 
